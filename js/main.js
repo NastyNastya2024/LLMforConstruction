@@ -24,4 +24,30 @@
       }
     });
   });
+
+  const tocLinks = document.querySelectorAll('.mod-toc a[href^="#"]');
+  const tocSections = [...tocLinks]
+    .map((link) => document.querySelector(link.getAttribute('href')))
+    .filter(Boolean);
+
+  if (tocLinks.length && tocSections.length) {
+    const setActive = (id) => {
+      tocLinks.forEach((link) => {
+        link.classList.toggle('is-active', link.getAttribute('href') === `#${id}`);
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (visible) setActive(visible.target.id);
+      },
+      { rootMargin: '-20% 0px -55% 0px', threshold: [0, 0.25, 0.5] }
+    );
+
+    tocSections.forEach((section) => observer.observe(section));
+    setActive(tocSections[0].id);
+  }
 })();

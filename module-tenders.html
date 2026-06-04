@@ -7,7 +7,7 @@
   <title>Тендеры — фильтрация и документация — Structora AI</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
+<body class="module-page module-page--tenders">
   <header class="site-header">
     <div class="nav-inner">
       <a href="index.html" class="logo">Structora <span>AI</span></a>
@@ -29,243 +29,305 @@
   </header>
 
   <main>
-    <section class="page-hero-band">
-      <div class="container">
+    <header class="module-hero">
+      <div class="container module-hero__inner">
         <a href="index.html#solutions" class="back-link">← Все модули</a>
-        <span class="module-hero-num">03</span>
-        <h1>Система интеллектуальной фильтрации тендеров и подготовки тендерной документации</h1>
+        <nav class="module-switcher" aria-label="Модули платформы">
+          <a href="module-filter.html"><span>01</span> Фильтрация</a>
+          <a href="module-kp.html"><span>02</span> КП</a>
+          <a href="module-tenders.html" class="is-active"><span>03</span> Тендеры</a>
+        </nav>
+        <h1>Фильтрация тендеров и тендерная документация</h1>
         <p class="lead">Локальный AI на GPU: отбор перспективных закупок, подготовка заявки и оценка вероятности победы — без передачи данных во внешние облака.</p>
-      </div>
-    </section>
-
-    <section class="w-section">
-      <div class="container module-doc">
-        <h2>1. Локальное исполнение на GPU (ключевой принцип)</h2>
-        <p>Система разворачивается на серверах заказчика и выполняет все операции искусственного интеллекта на локальных GPU без передачи данных во внешние облачные сервисы.</p>
-        <div class="principle-panel">
-          <p>Архитектура построена по принципу:</p>
-          <ul>
-            <li>детерминированная логика принятия решений;</li>
-            <li>локальные языковые модели для анализа документации;</li>
-            <li>специализированные агенты для отдельных этапов проверки;</li>
-            <li>автоматическая верификация результатов;</li>
-            <li>возможность работы критически важных функций при недоступности моделей.</li>
-          </ul>
-        </div>
-        <h3>Преимущества</h3>
-        <ul class="content-list">
-          <li>соответствие требованиям 152-ФЗ;</li>
-          <li>отсутствие зависимости от зарубежных сервисов;</li>
-          <li>защита коммерчески чувствительной информации;</li>
-          <li>возможность эксплуатации на закрытом контуре предприятия;</li>
-          <li>прогнозируемая стоимость владения.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="w-section w-section--soft">
-      <div class="container module-doc">
-        <h2>2. Цель проекта</h2>
-        <p>Сократить затраты тендерного отдела и увеличить процент выигранных тендеров за счёт:</p>
-        <ul class="content-list">
-          <li>автоматического отбора перспективных тендеров;</li>
-          <li>выявления заведомо убыточных закупок;</li>
-          <li>ускорения подготовки тендерной документации;</li>
-          <li>поиска рисков в конкурсной документации;</li>
-          <li>повторного использования накопленной экспертизы компании.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="w-section">
-      <div class="container module-doc">
-        <h2>3. Модуль 1. Интеллектуальная фильтрация тендеров</h2>
-        <h3>Назначение</h3>
-        <p>На вход поступает тендерная документация. Система автоматически отвечает на вопрос:</p>
-        <p class="lead-quote">«Стоит ли участвовать в данном тендере?»</p>
-
-        <h3>Автоматически анализируются</h3>
-        <h4>Коммерческие показатели</h4>
-        <ul class="content-list">
-          <li>ожидаемая прибыльность;</li>
-          <li>объём контракта;</li>
-          <li>потенциальная маржинальность;</li>
-          <li>уровень конкуренции;</li>
-          <li>размер обеспечения;</li>
-          <li>банковские гарантии.</li>
-        </ul>
-        <h4>Технические показатели</h4>
-        <ul class="content-list">
-          <li>соответствие компетенциям компании;</li>
-          <li>наличие аналогичного опыта;</li>
-          <li>соответствие производственным возможностям;</li>
-          <li>наличие необходимых лицензий и сертификатов.</li>
-        </ul>
-        <h4>Риск-факторы</h4>
-        <ul class="content-list">
-          <li>признаки заранее определённого победителя;</li>
-          <li>нереалистичные сроки;</li>
-          <li>завышенные штрафы;</li>
-          <li>нестандартные требования;</li>
-          <li>высокий уровень юридических рисков.</li>
-        </ul>
-
-        <h3>Результат</h3>
-        <p>Каждый тендер получает статус:</p>
-        <div class="tender-status-grid">
-          <article class="tender-status-card tender-status-card--go">
-            <h4>Участвовать</h4>
-            <p>Высокая вероятность прибыли и победы.</p>
-          </article>
-          <article class="tender-status-card tender-status-card--review">
-            <h4>Требует анализа</h4>
-            <p>Необходима дополнительная проверка специалистом.</p>
-          </article>
-          <article class="tender-status-card tender-status-card--skip">
-            <h4>Не участвовать</h4>
-            <p>Высокий риск убытков либо низкая вероятность победы.</p>
-          </article>
+        <div class="module-hero__stats">
+          <div class="mod-stat"><strong>5–15 мин</strong><span>первичный анализ тендера</span></div>
+          <div class="mod-stat"><strong>50–80%</strong><span>экономия трудозатрат</span></div>
+          <div class="mod-stat"><strong>3 статуса</strong><span>участвовать / анализ / отказ</span></div>
         </div>
       </div>
-    </section>
+    </header>
 
-    <section class="w-section w-section--soft">
-      <div class="container module-doc">
-        <h2>4. Модуль 2. Подготовка тендерной документации</h2>
-        <h3>Назначение</h3>
-        <p>Автоматизация подготовки заявки. Система формирует черновики:</p>
-        <ul class="content-list">
-          <li>технического предложения;</li>
-          <li>коммерческого предложения;</li>
-          <li>пояснительных записок;</li>
-          <li>сопроводительных писем;</li>
-          <li>комплектов квалификационных документов.</li>
-        </ul>
+    <div class="module-body">
+      <div class="container module-layout">
+        <aside class="mod-toc">
+          <span class="mod-toc__label">Содержание</span>
+          <nav aria-label="Разделы страницы">
+            <a href="#gpu">Локальный GPU</a>
+            <a href="#goal">Цель проекта</a>
+            <a href="#filter">Фильтрация</a>
+            <a href="#docs">Документация</a>
+            <a href="#win">Вероятность победы</a>
+            <a href="#integrations">Интеграции</a>
+            <a href="#effect">Эффект</a>
+            <a href="#rollout">Внедрение</a>
+            <a href="#arch">Архитектура</a>
+          </nav>
+        </aside>
 
-        <h3>Возможности</h3>
-        <h4>Анализ конкурсной документации</h4>
-        <p>Автоматическое извлечение:</p>
-        <ul class="content-list">
-          <li>требований заказчика;</li>
-          <li>перечня поставляемого оборудования;</li>
-          <li>объёмов работ;</li>
-          <li>сроков выполнения;</li>
-          <li>обязательных приложений.</li>
-        </ul>
-        <h4>Формирование заявки</h4>
-        <p>Используются:</p>
-        <ul class="content-list">
-          <li>архив ранее выигранных тендеров;</li>
-          <li>шаблоны компании;</li>
-          <li>база типовых решений;</li>
-          <li>библиотека сертификатов и лицензий.</li>
-        </ul>
+        <div class="mod-content">
+          <section class="mod-section" id="gpu">
+            <div class="mod-section__head">
+              <span class="mod-section__num">01</span>
+              <div class="mod-section__titles">
+                <h2>Локальное исполнение на GPU</h2>
+                <span class="mod-section__tag">Ключевой принцип</span>
+              </div>
+            </div>
+            <div class="mod-section__body">
+              <p>Система разворачивается на серверах заказчика и выполняет все операции ИИ на локальных GPU без передачи данных во внешние облачные сервисы.</p>
+              <div class="principle-panel">
+                <p>Архитектура построена по принципу:</p>
+                <ul>
+                  <li>детерминированная логика принятия решений;</li>
+                  <li>локальные языковые модели для анализа документации;</li>
+                  <li>специализированные агенты для отдельных этапов проверки;</li>
+                  <li>автоматическая верификация результатов;</li>
+                  <li>работа критических функций при недоступности моделей.</li>
+                </ul>
+              </div>
+              <ul class="mod-benefits">
+                <li>Соответствие требованиям 152-ФЗ</li>
+                <li>Независимость от зарубежных сервисов</li>
+                <li>Защита коммерчески чувствительной информации</li>
+                <li>Закрытый контур предприятия</li>
+                <li>Прогнозируемая стоимость владения</li>
+              </ul>
+            </div>
+          </section>
 
-        <h3>Контроль полноты</h3>
-        <p>Перед выпуском система проверяет:</p>
-        <ul class="content-list">
-          <li>все ли документы приложены;</li>
-          <li>отсутствуют ли обязательные справки;</li>
-          <li>соблюдены ли требования заказчика;</li>
-          <li>нет ли противоречий между документами.</li>
-        </ul>
-      </div>
-    </section>
+          <section class="mod-section" id="goal">
+            <div class="mod-section__head">
+              <span class="mod-section__num">02</span>
+              <div class="mod-section__titles">
+                <h2>Цель проекта</h2>
+              </div>
+            </div>
+            <div class="mod-section__body">
+              <p>Сократить затраты тендерного отдела и увеличить процент выигранных тендеров за счёт:</p>
+              <ol class="mod-tasks">
+                <li>автоматического отбора перспективных тендеров;</li>
+                <li>выявления заведомо убыточных закупок;</li>
+                <li>ускорения подготовки тендерной документации;</li>
+                <li>поиска рисков в конкурсной документации;</li>
+                <li>повторного использования экспертизы компании.</li>
+              </ol>
+            </div>
+          </section>
 
-    <section class="w-section">
-      <div class="container module-doc">
-        <h2>5. Модуль оценки вероятности победы</h2>
-        <p>На основании исторических данных рассчитываются:</p>
-        <ul class="content-list">
-          <li>вероятность допуска;</li>
-          <li>вероятность победы;</li>
-          <li>ожидаемая прибыль;</li>
-          <li>ожидаемая рентабельность;</li>
-          <li>рейтинг привлекательности тендера.</li>
-        </ul>
-        <p>Результат отображается в виде интегрального балла.</p>
-      </div>
-    </section>
+          <section class="mod-section" id="filter">
+            <div class="mod-section__head">
+              <span class="mod-section__num">03</span>
+              <div class="mod-section__titles">
+                <h2>Интеллектуальная фильтрация тендеров</h2>
+                <span class="mod-section__tag">Модуль 1</span>
+              </div>
+            </div>
+            <div class="mod-section__body">
+              <p>На вход — тендерная документация. Система отвечает на вопрос:</p>
+              <p class="lead-quote">«Стоит ли участвовать в данном тендере?»</p>
+              <div class="mod-subcards">
+                <div class="mod-subcard">
+                  <h4>Коммерческие показатели</h4>
+                  <ul>
+                    <li>прибыльность и маржа</li>
+                    <li>объём контракта</li>
+                    <li>конкуренция</li>
+                    <li>обеспечение и гарантии</li>
+                  </ul>
+                </div>
+                <div class="mod-subcard">
+                  <h4>Технические показатели</h4>
+                  <ul>
+                    <li>компетенции компании</li>
+                    <li>аналогичный опыт</li>
+                    <li>производственные возможности</li>
+                    <li>лицензии и сертификаты</li>
+                  </ul>
+                </div>
+                <div class="mod-subcard">
+                  <h4>Риск-факторы</h4>
+                  <ul>
+                    <li>заранее определённый победитель</li>
+                    <li>нереалистичные сроки</li>
+                    <li>завышенные штрафы</li>
+                    <li>юридические риски</li>
+                  </ul>
+                </div>
+              </div>
+              <h3>Результат — статус тендера</h3>
+              <div class="tender-status-grid">
+                <article class="tender-status-card tender-status-card--go">
+                  <h4>Участвовать</h4>
+                  <p>Высокая вероятность прибыли и победы.</p>
+                </article>
+                <article class="tender-status-card tender-status-card--review">
+                  <h4>Требует анализа</h4>
+                  <p>Дополнительная проверка специалистом.</p>
+                </article>
+                <article class="tender-status-card tender-status-card--skip">
+                  <h4>Не участвовать</h4>
+                  <p>Риск убытков или низкая вероятность победы.</p>
+                </article>
+              </div>
+            </div>
+          </section>
 
-    <section class="w-section w-section--soft">
-      <div class="container module-doc">
-        <h2>6. Интеграции</h2>
-        <p>Поддерживаются:</p>
-        <ul class="content-list">
-          <li>Битрикс24;</li>
-          <li>1С;</li>
-          <li>SAP;</li>
-          <li>Directum;</li>
-          <li>электронная почта;</li>
-          <li>корпоративные файловые хранилища;</li>
-          <li>ЕИС;</li>
-          <li>коммерческие тендерные площадки.</li>
-        </ul>
-      </div>
-    </section>
+          <section class="mod-section" id="docs">
+            <div class="mod-section__head">
+              <span class="mod-section__num">04</span>
+              <div class="mod-section__titles">
+                <h2>Подготовка тендерной документации</h2>
+                <span class="mod-section__tag">Модуль 2</span>
+              </div>
+            </div>
+            <div class="mod-section__body">
+              <p>Черновики: техническое и коммерческое предложение, пояснительные записки, письма, квалификационные комплекты.</p>
+              <h4>Анализ конкурсной документации</h4>
+              <ul class="mod-chips">
+                <li>Требования заказчика</li>
+                <li>Оборудование</li>
+                <li>Объёмы работ</li>
+                <li>Сроки</li>
+                <li>Приложения</li>
+              </ul>
+              <h4>Формирование заявки</h4>
+              <ul class="mod-chips">
+                <li>Архив выигранных тендеров</li>
+                <li>Шаблоны компании</li>
+                <li>Типовые решения</li>
+                <li>Сертификаты и лицензии</li>
+              </ul>
+              <h4>Контроль полноты</h4>
+              <ul class="mod-benefits">
+                <li>Все документы приложены</li>
+                <li>Обязательные справки на месте</li>
+                <li>Требования заказчика соблюдены</li>
+                <li>Нет противоречий между документами</li>
+              </ul>
+            </div>
+          </section>
 
-    <section class="w-section">
-      <div class="container module-doc">
-        <h2>7. Ожидаемый эффект</h2>
-        <div class="effect-compare">
-          <div class="effect-col">
-            <h4>Текущая практика</h4>
-            <ul>
-              <li>анализ одного тендера: 2–8 часов;</li>
-              <li>подготовка заявки: 1–5 дней;</li>
-              <li>высокий процент участия в нерентабельных закупках.</li>
-            </ul>
+          <section class="mod-section" id="win">
+            <div class="mod-section__head">
+              <span class="mod-section__num">05</span>
+              <div class="mod-section__titles">
+                <h2>Оценка вероятности победы</h2>
+              </div>
+            </div>
+            <div class="mod-section__body">
+              <div class="mod-metrics">
+                <div class="mod-metric"><strong>Допуск</strong><span>вероятность прохождения</span></div>
+                <div class="mod-metric"><strong>Победа</strong><span>вероятность выигрыша</span></div>
+                <div class="mod-metric"><strong>ROI</strong><span>ожидаемая прибыль</span></div>
+                <div class="mod-metric"><strong>Балл</strong><span>интегральный рейтинг</span></div>
+              </div>
+              <p>На основании исторических данных: рентабельность, привлекательность тендера — в одном интегральном балле.</p>
+            </div>
+          </section>
+
+          <section class="mod-section" id="integrations">
+            <div class="mod-section__head">
+              <span class="mod-section__num">06</span>
+              <div class="mod-section__titles">
+                <h2>Интеграции</h2>
+              </div>
+            </div>
+            <div class="mod-section__body">
+              <ul class="mod-chips">
+                <li>Битрикс24</li>
+                <li>1С</li>
+                <li>SAP</li>
+                <li>Directum</li>
+                <li>Email</li>
+                <li>Файловые хранилища</li>
+                <li>ЕИС</li>
+                <li>Тендерные площадки</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="mod-section" id="effect">
+            <div class="mod-section__head">
+              <span class="mod-section__num">07</span>
+              <div class="mod-section__titles">
+                <h2>Ожидаемый эффект</h2>
+              </div>
+            </div>
+            <div class="mod-section__body">
+              <div class="effect-compare">
+                <div class="effect-col">
+                  <h4>Текущая практика</h4>
+                  <ul>
+                    <li>анализ тендера: 2–8 часов;</li>
+                    <li>подготовка заявки: 1–5 дней;</li>
+                    <li>много нерентабельных закупок.</li>
+                  </ul>
+                </div>
+                <div class="effect-col effect-col--after">
+                  <h4>После внедрения</h4>
+                  <ul>
+                    <li>анализ: 5–15 минут;</li>
+                    <li>трудозатраты −50–80%;</li>
+                    <li>меньше убыточных тендеров;</li>
+                    <li>быстрее заявки;</li>
+                    <li>эффективнее эксперты.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mod-section" id="rollout">
+            <div class="mod-section__head">
+              <span class="mod-section__num">08</span>
+              <div class="mod-section__titles">
+                <h2>Этапы внедрения</h2>
+              </div>
+            </div>
+            <div class="mod-section__body">
+              <ol class="steps-list">
+                <li>Этап 0. Обследование и аудит тендерного процесса.</li>
+                <li>Этап 1. Пилот на историческом архиве.</li>
+                <li>Этап 2. Подключение к потоку закупок.</li>
+                <li>Этап 3. Масштабирование на подразделения.</li>
+                <li>Этап 4. Дообучение на данных компании.</li>
+              </ol>
+            </div>
+          </section>
+
+          <section class="mod-section" id="arch">
+            <div class="mod-section__head">
+              <span class="mod-section__num">09</span>
+              <div class="mod-section__titles">
+                <h2>Архитектура решения</h2>
+              </div>
+            </div>
+            <div class="mod-section__body">
+              <ul class="mod-chips">
+                <li>Python</li>
+                <li>LangGraph</li>
+                <li>PostgreSQL</li>
+                <li>Локальные LLM</li>
+                <li>OCR</li>
+                <li>RAG по архиву</li>
+                <li>Векторная БЗ</li>
+                <li>GPU-инференс</li>
+              </ul>
+              <p class="arch-note">Все данные, документация, расчёты и модели — внутри контура предприятия.</p>
+            </div>
+          </section>
+
+          <div class="mod-cta-panel">
+            <p>Комплексное внедрение тендерного контура</p>
+            <div class="hero-actions">
+              <a href="index.html#contact" class="btn btn-primary">Контакты</a>
+              <a href="module-filter.html" class="btn btn-outline btn-sm">← Фильтрация</a>
+              <a href="local-gpu.html" class="btn btn-outline btn-sm">Локальный GPU</a>
+            </div>
           </div>
-          <div class="effect-col effect-col--after">
-            <h4>После внедрения</h4>
-            <ul>
-              <li>первичный анализ тендера: 5–15 минут;</li>
-              <li>сокращение трудозатрат тендерного отдела на 50–80%;</li>
-              <li>уменьшение количества убыточных тендеров;</li>
-              <li>повышение скорости подготовки заявок;</li>
-              <li>рост эффективности использования экспертов компании.</li>
-            </ul>
-          </div>
         </div>
       </div>
-    </section>
-
-    <section class="w-section w-section--soft">
-      <div class="container module-doc">
-        <h2>8. Этапы внедрения</h2>
-        <ol class="steps-list">
-          <li>Этап 0. Обследование и аудит тендерного процесса.</li>
-          <li>Этап 1. Пилот на историческом архиве тендеров.</li>
-          <li>Этап 2. Подключение к текущему потоку закупок.</li>
-          <li>Этап 3. Масштабирование на все подразделения.</li>
-          <li>Этап 4. Дообучение на накопленных данных компании.</li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="w-section">
-      <div class="container module-doc">
-        <h2>9. Архитектура решения</h2>
-        <p>Технологический стек:</p>
-        <ul class="content-list">
-          <li>Python;</li>
-          <li>LangGraph;</li>
-          <li>PostgreSQL;</li>
-          <li>локальные LLM;</li>
-          <li>OCR для тендерной документации;</li>
-          <li>RAG-поиск по архиву компании;</li>
-          <li>векторная база знаний;</li>
-          <li>GPU-инференс в инфраструктуре заказчика.</li>
-        </ul>
-        <p class="arch-note">Все исходные данные, документация, расчёты и модели могут полностью размещаться внутри контура предприятия.</p>
-        <div class="module-cta">
-          <a href="index.html#contact" class="btn btn-primary">Контакты</a>
-          <a href="module-filter.html" class="btn btn-outline btn-sm">Модуль фильтрации</a>
-          <a href="module-kp.html" class="btn btn-outline btn-sm">Модуль КП</a>
-          <a href="local-gpu.html" class="btn btn-outline btn-sm">Локальный GPU</a>
-        </div>
-      </div>
-    </section>
+    </div>
   </main>
 
   <footer class="site-footer">
