@@ -1,4 +1,4 @@
-/* Structora AI — Ecomora-inspired light dashboard */
+/* Structura AI — Ecomora-inspired light dashboard */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 :root {
@@ -2151,8 +2151,15 @@ body.subpage .module-body--stacked .mod-content {
     display: flex;
   }
 
+  .nav-inner {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
   .nav-toggle {
     display: block;
+    margin-left: auto;
+    padding: 6px;
   }
 
   .metrics-grid,
