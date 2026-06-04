@@ -830,6 +830,7 @@ a {
 
 .module-page--gpu .module-hero h1 span {
   display: block;
+  margin-top: 0.35em;
   color: var(--text-muted);
   font-weight: 700;
 }
@@ -910,7 +911,16 @@ body.subpage .module-body--stacked .mod-content {
 
 /* GPU page sections inside unified module layout */
 .module-page--gpu .gpu-marquee {
-  margin: 0 0 40px;
+  margin: 0 0 56px;
+  padding: 20px 0;
+}
+
+.module-page--gpu .gpu-hero-actions {
+  gap: 16px;
+}
+
+.module-page--gpu .module-hero__inner {
+  padding-bottom: 64px;
 }
 
 .module-page--gpu .gpu-section {
@@ -957,7 +967,7 @@ body.subpage .module-body--stacked .mod-content {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   font-size: 0.8125rem;
   font-weight: 500;
   color: var(--text-muted);
@@ -974,15 +984,15 @@ body.subpage .module-body--stacked .mod-content {
 }
 
 .module-hero__inner {
-  padding-bottom: 40px;
+  padding-bottom: 56px;
 }
 
 .module-hero h1 {
-  margin: 0 0 16px;
+  margin: 0 0 28px;
   max-width: 22ch;
   font-size: clamp(1.75rem, 4.5vw, 3rem);
   font-weight: 800;
-  line-height: 1.08;
+  line-height: 1.12;
   letter-spacing: -0.03em;
 }
 
@@ -991,11 +1001,11 @@ body.subpage .module-body--stacked .mod-content {
 }
 
 .module-hero .lead {
-  margin: 0;
+  margin: 0 0 36px;
   max-width: 58ch;
   font-size: 1.0625rem;
   color: var(--text-muted);
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .module-switcher {
@@ -2280,14 +2290,14 @@ body.subpage .module-body--stacked .mod-content {
 .gpu-hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 16px;
   margin-bottom: 0;
 }
 
 .gpu-marquee {
   overflow: hidden;
-  margin: 0 0 48px;
-  padding: 16px 0;
+  margin: 0 0 56px;
+  padding: 20px 0;
   background: #ffffff;
   color: var(--text);
   border-top: 1px solid var(--border);
