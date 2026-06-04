@@ -4,70 +4,77 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Локальный AI (on-premise) в строительстве — данные остаются у вас." />
-  <title>Локальный AI (on-premise) — Structora AI</title>
+  <title>Локальный AI — Structora AI</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="nav-inner">
-      <a href="index.html" class="logo">
-        <span class="logo-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="currentColor">
-            <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/>
-          </svg>
-        </span>
-        Structora AI
-      </a>
+      <a href="index.html" class="logo">Structora <span>AI</span></a>
       <button class="nav-toggle" type="button" aria-label="Меню" aria-expanded="false">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
       </button>
       <ul class="nav-links">
         <li><a href="index.html">Главная</a></li>
-        <li><a href="local-ai.html" class="active">Локальный AI</a></li>
-        <li><a href="product.html">Продукт</a></li>
-        <li><a href="index.html#solutions">Решения</a></li>
+        <li><a href="module-filter.html">Фильтрация</a></li>
+        <li><a href="module-kp.html">КП</a></li>
+        <li><a href="module-estimates.html">Сметы</a></li>
+        <li><a href="module-tenders.html">Тендеры</a></li>
+        <li><a href="local-gpu.html">Локальный GPU</a></li>
         <li><a href="index.html#contact">Контакты</a></li>
       </ul>
-      <div class="nav-actions">
-        <a href="index.html#contact" class="btn btn-primary">Запросить демо</a>
-      </div>
+      <a href="index.html#contact" class="btn btn-primary btn-sm">Демо</a>
     </div>
   </header>
 
   <main>
-    <section class="page-hero">
+    <section class="page-hero-band">
       <div class="container">
-        <h1>Локальный AI в строительстве — это когда данные остаются у вас</h1>
+        <div class="w-meta">
+          <span class="w-meta__id">n.<span>001</span></span>
+          <span class="w-meta__name">Суть</span>
+        </div>
+        <p class="w-num">N°001</p>
+        <h1>Локальный AI в строительстве — данные остаются у вас</h1>
         <p class="lead">
-          Локальный искусственный интеллект — это система, которая работает не в облаке, а на вашем сервере или GPU-кластере.
+          Искусственный интеллект на вашем сервере или GPU-кластере, а не в облаке.
         </p>
       </div>
     </section>
 
-    <section class="section">
+    <section class="w-section w-section--soft">
       <div class="container">
-        <div class="info-card" style="margin-bottom: 32px;">
+        <div class="info-card">
           <h3>Это значит</h3>
           <ul class="check-list">
             <li>
-              <span class="check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>
+              <span class="check-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>
               чертежи не покидают компанию
             </li>
             <li>
-              <span class="check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>
+              <span class="check-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>
               тендеры не уходят сторонним сервисам
             </li>
             <li>
-              <span class="check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>
+              <span class="check-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>
               финансовые данные остаются внутри инфраструктуры
             </li>
           </ul>
         </div>
+      </div>
+    </section>
 
-        <div class="section-header">
-          <h2>Чем отличается от облачных решений</h2>
+    <section class="w-section">
+      <div class="container">
+        <div class="w-section__head">
+          <div class="w-meta">
+            <span class="w-meta__id">n.<span>002</span></span>
+            <span class="w-meta__name">Сравнение</span>
+          </div>
+          <p class="w-num">N°002</p>
+          <h2 class="w-title">Облако vs локальная система</h2>
         </div>
         <div class="compare-grid">
           <div class="compare-card negative">
@@ -92,18 +99,17 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="w-section w-section--soft">
       <div class="container">
-        <div class="section-header">
-          <h2>Почему это важно именно в строительстве</h2>
-          <p>
-            Строительная отрасль работает с крупными контрактами, коммерческими тендерами, инженерной документацией и критичной финансовой информацией. Утечка или ошибка здесь стоит миллионы.
-          </p>
+        <div class="w-section__head">
+          <p class="w-num">N°003</p>
+          <h2 class="w-title">Почему это важно в строительстве</h2>
+          <p class="w-lead">Крупные контракты, тендеры и инженерная документация. Утечка или ошибка стоит миллионы.</p>
         </div>
-        <div class="metrics-grid">
+        <div class="metrics-grid metrics-grid--3">
           <article class="value-card">
             <h3>Крупные контракты</h3>
-            <p>Коммерческие условия не должны попадать в публичные модели</p>
+            <p>Коммерческие условия не попадают в публичные модели</p>
           </article>
           <article class="value-card">
             <h3>Тендеры</h3>
@@ -111,73 +117,49 @@
           </article>
           <article class="value-card">
             <h3>Инженерная документация</h3>
-            <p>Чертежи и BIM — интеллектуальная собственность компании</p>
+            <p>Чертежи и BIM — интеллектуальная собственность</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="w-section">
       <div class="container">
-        <div class="section-header">
-          <h2>Как это работает</h2>
+        <div class="w-section__head">
+          <p class="w-num">N°004</p>
+          <h2 class="w-title">Как это работает</h2>
         </div>
         <div class="steps">
           <div class="step-item">
-            <span class="step-num">1</span>
+            <span class="step-num">01</span>
             <p>Вы устанавливаете AI-систему на сервер</p>
           </div>
           <div class="step-item">
-            <span class="step-num">2</span>
+            <span class="step-num">02</span>
             <p>Подключаете внутренние базы и документы</p>
           </div>
           <div class="step-item">
-            <span class="step-num">3</span>
+            <span class="step-num">03</span>
             <p>Загружаете чертежи, тендеры, фото с площадки</p>
           </div>
           <div class="step-item">
-            <span class="step-num">4</span>
-            <p>AI анализирует и возвращает решения внутри вашей инфраструктуры</p>
+            <span class="step-num">04</span>
+            <p>AI возвращает решения внутри вашей инфраструктуры</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Результат</h2>
+    <section class="w-section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <p class="w-num">N°005</p>
+          <h2 class="w-title">Развернуть локальный AI</h2>
+          <p class="w-lead">Консультация по архитектуре и интеграции с 1С / ERP.</p>
         </div>
-        <div class="effects-grid">
-          <div class="effect-card">
-            <div class="value">↑</div>
-            <div class="label">Быстрее принятие решений</div>
-          </div>
-          <div class="effect-card">
-            <div class="value">−</div>
-            <div class="label">Снижение операционных ошибок</div>
-          </div>
-          <div class="effect-card">
-            <div class="value">🔒</div>
-            <div class="label">Защита коммерческой информации</div>
-          </div>
-          <div class="effect-card">
-            <div class="value">+</div>
-            <div class="label">Рост маржинальности проектов</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="cta-block">
-          <h2>Узнайте, как развернуть локальный AI у себя</h2>
-          <p>Консультация по архитектуре и интеграции с 1С / ERP.</p>
-          <div class="cta-actions">
-            <a href="index.html#contact" class="btn btn-primary">Запросить демо</a>
-            <a href="product.html" class="btn btn-outline">Смотреть продукт</a>
-          </div>
+        <div class="contact-actions">
+          <a href="index.html#contact" class="btn btn-primary">Запросить демо</a>
+          <a href="product.html" class="btn btn-outline">Продукт</a>
         </div>
       </div>
     </section>
@@ -185,11 +167,15 @@
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <p>© 2026 Structora AI. Локальный AI для строительства.</p>
+      <p>© 2026 Structora AI</p>
       <ul class="footer-links">
         <li><a href="index.html">Главная</a></li>
-        <li><a href="local-ai.html">Локальный AI</a></li>
-        <li><a href="product.html">Продукт</a></li>
+        <li><a href="module-filter.html">Фильтрация</a></li>
+        <li><a href="module-kp.html">КП</a></li>
+        <li><a href="module-estimates.html">Сметы</a></li>
+        <li><a href="module-tenders.html">Тендеры</a></li>
+        <li><a href="local-gpu.html">Локальный GPU</a></li>
+        <li><a href="index.html#contact">Контакты</a></li>
       </ul>
     </div>
   </footer>

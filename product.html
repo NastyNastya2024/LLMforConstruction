@@ -10,46 +10,45 @@
 <body>
   <header class="site-header">
     <div class="nav-inner">
-      <a href="index.html" class="logo">
-        <span class="logo-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="currentColor">
-            <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/>
-          </svg>
-        </span>
-        Structora AI
-      </a>
+      <a href="index.html" class="logo">Structora <span>AI</span></a>
       <button class="nav-toggle" type="button" aria-label="Меню" aria-expanded="false">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
       </button>
       <ul class="nav-links">
         <li><a href="index.html">Главная</a></li>
-        <li><a href="local-ai.html">Локальный AI</a></li>
-        <li><a href="product.html" class="active">Продукт</a></li>
-        <li><a href="index.html#solutions">Решения</a></li>
+        <li><a href="module-filter.html">Фильтрация</a></li>
+        <li><a href="module-kp.html">КП</a></li>
+        <li><a href="module-estimates.html">Сметы</a></li>
+        <li><a href="module-tenders.html">Тендеры</a></li>
+        <li><a href="local-gpu.html">Локальный GPU</a></li>
         <li><a href="index.html#contact">Контакты</a></li>
       </ul>
-      <div class="nav-actions">
-        <a href="index.html#contact" class="btn btn-primary">Запросить демо</a>
-      </div>
+      <a href="index.html#contact" class="btn btn-primary btn-sm">Демо</a>
     </div>
   </header>
 
   <main>
-    <section class="page-hero">
+    <section class="page-hero-band">
       <div class="container">
-        <h1>AI-платформа для управления строительными тендерами и проектами</h1>
+        <div class="w-meta">
+          <span class="w-meta__id">n.<span>001</span></span>
+          <span class="w-meta__name">Продукт</span>
+        </div>
+        <p class="w-num">N°001</p>
+        <h1>AI-платформа для тендеров и проектов</h1>
         <p class="lead">
-          Одна система, которая заменяет сметчика, тендерного менеджера, аналитика, координатора проекта и контролера стройки.
+          Одна система вместо сметчика, тендерного менеджера, аналитика и координатора проекта.
         </p>
       </div>
     </section>
 
-    <section class="section">
+    <section class="w-section w-section--soft">
       <div class="container">
-        <div class="section-header">
-          <h2>Возможности платформы</h2>
+        <div class="w-section__head">
+          <p class="w-num">N°002</p>
+          <h2 class="w-title">Возможности</h2>
         </div>
         <div class="features-table">
           <div class="feature-row">
@@ -71,7 +70,7 @@
               <h4>AI-сметы</h4>
               <span class="status-pill status-complete">Готово</span>
             </div>
-            <p>Объемы работ и стоимость формируются автоматически на основе чертежей.</p>
+            <p>Объёмы и стоимость автоматически на основе чертежей.</p>
           </div>
           <div class="feature-row">
             <div>
@@ -79,68 +78,53 @@
             </div>
             <p>Контроль сроков, ресурсов и бюджета в реальном времени.</p>
           </div>
-          <div class="feature-row">
-            <div>
-              <h4>Контроль стройплощадки</h4>
-            </div>
-            <p>Фото и видео анализ прогресса и отклонений.</p>
-          </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="w-section">
       <div class="container">
-        <div class="section-header">
-          <h2>Эффект для бизнеса</h2>
+        <div class="w-section__head">
+          <p class="w-num">N°003</p>
+          <h2 class="w-title">Эффект для бизнеса</h2>
         </div>
         <div class="effects-grid">
           <div class="effect-card">
             <div class="value">3–5×</div>
-            <div class="label">Ускорение тендерного цикла</div>
-            <span class="pill pill-green" style="margin-top: 12px">+300%</span>
+            <div class="label">тендерный цикл</div>
           </div>
           <div class="effect-card">
             <div class="value">60%</div>
-            <div class="label">Снижение затрат на сметы</div>
-            <span class="pill pill-green" style="margin-top: 12px">−60%</span>
+            <div class="label">экономия на сметах</div>
           </div>
           <div class="effect-card">
             <div class="value">Win</div>
-            <div class="label">Рост win-rate по тендерам</div>
+            <div class="label">рост win-rate</div>
           </div>
           <div class="effect-card">
             <div class="value">↓</div>
-            <div class="label">Уменьшение перерасходов бюджета</div>
+            <div class="label">перерасход бюджета</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="w-section w-section--soft">
       <div class="container">
-        <div class="section-header">
-          <h2>Развертывание</h2>
+        <div class="w-section__head">
+          <p class="w-num">N°004</p>
+          <h2 class="w-title">Развертывание</h2>
         </div>
-        <div class="metrics-grid">
+        <div class="metrics-grid metrics-grid--3">
           <article class="value-card">
-            <div class="icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-            </div>
             <h3>On-premise</h3>
             <p>Ваш сервер, полная изоляция данных</p>
           </article>
           <article class="value-card">
-            <div class="icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-6M14 14h-4M10 18H6M12 2a10 10 0 100 20 10 10 0 000-20z"/></svg>
-            </div>
             <h3>Private cloud</h3>
             <p>Выделенное облако в вашем периметре</p>
           </article>
           <article class="value-card">
-            <div class="icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            </div>
             <h3>GPU-инфраструктура</h3>
             <p>NVIDIA A100/H100 или аналог</p>
           </article>
@@ -148,46 +132,16 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="hero-visual" style="max-width: 100%;">
-          <div class="dashboard-preview">
-            <div class="metric-row">
-              <div class="metric-card">
-                <p class="label">Тендеры в работе</p>
-                <p class="value">24</p>
-                <span class="pill pill-green">+12%</span>
-              </div>
-              <div class="metric-card">
-                <p class="label">Сметы за неделю</p>
-                <p class="value">18</p>
-                <span class="pill pill-red">−3%</span>
-              </div>
-            </div>
-            <div class="chart-card">
-              <h4>Win-rate по месяцам</h4>
-              <div class="bar-chart">
-                <div class="bar bar-striped" style="height: 40%"></div>
-                <div class="bar bar-solid" style="height: 55%"></div>
-                <div class="bar bar-striped" style="height: 50%"></div>
-                <div class="bar bar-solid" style="height: 75%"></div>
-                <div class="bar bar-striped" style="height: 80%"></div>
-                <div class="bar bar-solid" style="height: 95%"></div>
-              </div>
-            </div>
-          </div>
+    <section class="w-section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <p class="w-num">N°005</p>
+          <h2 class="w-title">Демо через 2 недели</h2>
+          <p class="w-lead">Посмотрите, как AI меняет вашу стройку на ваших данных.</p>
         </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="cta-block">
-          <h2>Запросите демонстрацию и посмотрите, как AI меняет вашу стройку уже через 2 недели</h2>
-          <div class="cta-actions">
-            <a href="index.html#contact" class="btn btn-primary">Запросить демо</a>
-            <a href="local-ai.html" class="btn btn-outline">О локальном AI</a>
-          </div>
+        <div class="contact-actions">
+          <a href="index.html#contact" class="btn btn-primary">Запросить демо</a>
+          <a href="local-ai.html" class="btn btn-outline">Локальный AI</a>
         </div>
       </div>
     </section>
@@ -195,11 +149,15 @@
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <p>© 2026 Structora AI. Локальный AI для строительства.</p>
+      <p>© 2026 Structora AI</p>
       <ul class="footer-links">
         <li><a href="index.html">Главная</a></li>
-        <li><a href="local-ai.html">Локальный AI</a></li>
-        <li><a href="product.html">Продукт</a></li>
+        <li><a href="module-filter.html">Фильтрация</a></li>
+        <li><a href="module-kp.html">КП</a></li>
+        <li><a href="module-estimates.html">Сметы</a></li>
+        <li><a href="module-tenders.html">Тендеры</a></li>
+        <li><a href="local-gpu.html">Локальный GPU</a></li>
+        <li><a href="index.html#contact">Контакты</a></li>
       </ul>
     </div>
   </footer>
