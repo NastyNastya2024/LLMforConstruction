@@ -2118,4 +2118,364 @@ a {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .gpu-problem-grid,
+  .gpu-benefits-grid,
+  .gpu-cap-grid,
+  .gpu-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gpu-benefit-card--wide {
+    grid-column: span 1;
+  }
+}
+
+/* ——— Local GPU / Rig on-premise landing ——— */
+.gpu-landing main {
+  padding-top: var(--nav-h);
+}
+
+.gpu-hero {
+  padding: 64px 0 56px;
+  background: var(--bg-card);
+  border-bottom: none;
+}
+
+.gpu-hero h1 {
+  margin: 0 0 12px;
+  max-width: none;
+  font-size: clamp(2.25rem, 6vw, 4rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.gpu-hero h1 span {
+  display: block;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.gpu-hero .lead {
+  max-width: 52ch;
+  margin: 0 0 28px;
+  font-size: 1.125rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.gpu-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 0;
+}
+
+.gpu-marquee {
+  overflow: hidden;
+  margin: 0 0 48px;
+  padding: 16px 0;
+  background: #ffffff;
+  color: var(--text);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.gpu-marquee__track {
+  display: flex;
+  width: max-content;
+  animation: gpu-marquee 40s linear infinite;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.gpu-marquee__track span {
+  padding: 0 24px;
+}
+
+.gpu-marquee__track span::after {
+  content: '•';
+  margin-left: 24px;
+  opacity: 0.35;
+  color: var(--text);
+}
+
+@keyframes gpu-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.gpu-section {
+  padding: clamp(64px, 10vh, 100px) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.gpu-section--soft {
+  background: var(--bg-soft);
+}
+
+.gpu-eyebrow {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.gpu-eyebrow--lime {
+  color: var(--lime-text);
+}
+
+.gpu-section h2 {
+  margin: 0 0 20px;
+  max-width: 24ch;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.gpu-section h2.wide {
+  max-width: none;
+}
+
+.gpu-section > .container > p.lead-block {
+  margin: 0 0 40px;
+  max-width: 58ch;
+  font-size: 1.0625rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.gpu-problem-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.gpu-problem-card {
+  padding: 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.gpu-problem-card .num {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+}
+
+.gpu-problem-card h3 {
+  margin: 0 0 12px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.gpu-problem-card p {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.gpu-product-copy .badge {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: var(--green-soft);
+  color: var(--green-text);
+  border-radius: var(--radius-pill);
+}
+
+.gpu-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.gpu-benefit-card {
+  padding: 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.gpu-benefit-card .icon {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-dim);
+}
+
+.gpu-benefit-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.0625rem;
+  font-weight: 700;
+}
+
+.gpu-benefit-card p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.gpu-benefit-card--wide {
+  grid-column: span 2;
+}
+
+.gpu-privacy {
+  max-width: 52ch;
+}
+
+.gpu-privacy h2 {
+  max-width: none;
+}
+
+.gpu-cap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.gpu-cap-card {
+  padding: 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.gpu-cap-card .num {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 0.8125rem;
+  font-weight: 800;
+  color: var(--text-dim);
+}
+
+.gpu-cap-card h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.gpu-cap-card p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.gpu-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.gpu-summary-card {
+  padding: 24px;
+  text-align: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.gpu-summary-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.gpu-summary-card span {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.gpu-summary-card small {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.gpu-faq .faq-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 8px;
+  padding: 0 24px;
+}
+
+.gpu-faq .faq-item summary {
+  padding: 20px 0;
+}
+
+.gpu-cta-final {
+  text-align: center;
+  background: var(--text);
+  color: #fff;
+  border-bottom: none;
+}
+
+.gpu-cta-final h2 {
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+.gpu-cta-final p {
+  margin: 0 auto 28px;
+  max-width: 48ch;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.gpu-cta-final .btn-primary {
+  background: var(--lime);
+  color: var(--lime-text);
+}
+
+.gpu-subnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.gpu-subnav a {
+  padding: 8px 14px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+}
+
+.gpu-subnav a:hover {
+  color: var(--text);
+  border-color: var(--text);
 }

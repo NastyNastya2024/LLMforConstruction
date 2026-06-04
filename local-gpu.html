@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Почему локальный GPU — а не облако. Structora AI." />
+  <meta name="description" content="Локальный ИИ-агент на вашем GPU — без облаков, без лимитов. Structora AI." />
   <title>Локальный GPU — Structora AI</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
+<body class="gpu-landing">
   <header class="site-header">
     <div class="nav-inner">
       <a href="index.html" class="logo">Structora <span>AI</span></a>
@@ -29,53 +29,212 @@
   </header>
 
   <main>
-    <section class="page-hero-band">
+    <section class="gpu-hero" id="top">
       <div class="container">
-        <a href="index.html#solutions" class="back-link">← Все модули</a>
-        <span class="module-hero-num">GPU</span>
-        <h1>Почему локальный GPU — а не облако?</h1>
-        <p class="lead">Развертывание AI на вашем оборудовании: без утечек, без подписок за токены, с полным контролем над моделью.</p>
+        <nav class="gpu-subnav" aria-label="Разделы страницы">
+          <a href="#faq">FAQ</a>
+          <a href="#product">Наш продукт</a>
+          <a href="#benefits">Философия</a>
+          <a href="#capabilities">Возможности</a>
+        </nav>
+        <h1>Локальный ИИ-агент <span>Без облаков. Без лимитов.</span></h1>
+        <p class="lead">Это полностью автономный ИИ-агент, работающий на вашем устройстве. Ему не нужно подключаться к облаку. А вам — беспокоиться об ограничениях.</p>
+        <div class="gpu-hero-actions">
+          <a href="index.html#contact" class="btn btn-primary">подать заявку</a>
+          <a href="#product" class="btn btn-outline">наши подходы</a>
+        </div>
       </div>
     </section>
 
-    <section class="w-section w-section--soft">
+    <div class="gpu-marquee" aria-hidden="true">
+      <div class="gpu-marquee__track">
+        <span>Отсутствие токенов</span><span>Работает без интернета</span><span>Ваше железо — ваши правила</span><span>Без скрытых счётчиков</span>
+        <span>Отсутствие токенов</span><span>Работает без интернета</span><span>Ваше железо — ваши правила</span><span>Без скрытых счётчиков</span>
+      </div>
+    </div>
+
+    <section class="gpu-section" id="problem">
       <div class="container">
-        <div class="compare-table-wrap">
-          <table class="compare-table">
-            <thead>
-              <tr>
-                <th scope="col"></th>
-                <th scope="col" class="col-cloud">Облачный AI</th>
-                <th scope="col" class="col-local">Локальный AI (ваш GPU)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Данные</th>
-                <td class="col-cloud">Ваши чертежи уходят на сервера</td>
-                <td class="col-local">Данные — 0 утечек</td>
-              </tr>
-              <tr>
-                <th scope="row">Стоимость</th>
-                <td class="col-cloud">Платите за каждый токен / запрос</td>
-                <td class="col-local">Платите один раз за развёртывание</td>
-              </tr>
-              <tr>
-                <th scope="row">Скорость</th>
-                <td class="col-cloud">Лимиты, очереди, задержки</td>
-                <td class="col-local">Мгновенно. Даже без интернета</td>
-              </tr>
-              <tr>
-                <th scope="row">Модель</th>
-                <td class="col-cloud">Общая модель «для всех»</td>
-                <td class="col-local">Модель дообучена под ваши задачи</td>
-              </tr>
-            </tbody>
-          </table>
+        <span class="gpu-eyebrow">Проблема</span>
+        <h2 class="wide">Сейчас вы не владеете LLM. Claude, ChatGPT и Perplexity могут использовать ваши данные.</h2>
+        <div class="gpu-problem-grid">
+          <article class="gpu-problem-card">
+            <span class="num">Извлечение данных 001</span>
+            <h3>LLM учатся на ваших данных.</h3>
+            <p>Каждый запрос, каждое действие, каждое исправление утекает на сервера, где идёт обучение систем, которые завтра захотят вас заменить.</p>
+          </article>
+          <article class="gpu-problem-card">
+            <span class="num">Искусственный дефицит 002</span>
+            <h3>Ваш энтузиазм душат лимитами.</h3>
+            <p>Только ворвался в работу, разогнался — а ИИ начинает тормозить, выдавать ошибки и просит подождать или доплатить.</p>
+          </article>
+          <article class="gpu-problem-card">
+            <span class="num">Тихие даунгрейды 003</span>
+            <h3>Модель молча подменяют.</h3>
+            <p>В часы пик вам незаметно подсовывают дешёвую версию. Цена остаётся прежней, а качество падает.</p>
+          </article>
+          <article class="gpu-problem-card">
+            <span class="num">Зависимость от облака 004</span>
+            <h3>Вы зависите от облаков.</h3>
+            <p>Каждое ваше действие путешествует туда-обратно через интернет. Тысячи маленьких прерываний каждый день.</p>
+          </article>
         </div>
-        <div class="module-cta">
-          <a href="index.html#contact" class="btn btn-primary">Контакты</a>
+      </div>
+    </section>
+
+    <section class="gpu-section gpu-section--soft" id="product">
+      <div class="container">
+        <div class="gpu-product-copy">
+          <span class="badge">✓ Наш продукт</span>
+          <h2 class="wide">Мы создаём локальную LLM, которой владеете только вы</h2>
+          <p class="lead-block">Полноценный ИИ-агент, который вы разворачиваете на собственном GPU и обучаете под свои задачи. Никаких лимитов. Никакой облачной зависимости.</p>
         </div>
+      </div>
+    </section>
+
+    <section class="gpu-section" id="benefits">
+      <div class="container">
+        <span class="gpu-eyebrow">Ключевые преимущества</span>
+        <div class="gpu-benefits-grid">
+          <article class="gpu-benefit-card">
+            <span class="icon">◎ Офлайн</span>
+            <h3>Работайте без интернета</h3>
+            <p>В полёте, на даче, при отключении Wi‑Fi — ничто не прервёт ваш поток. Всё всегда с вами.</p>
+          </article>
+          <article class="gpu-benefit-card">
+            <span class="icon">∞ Безлимит</span>
+            <h3>Лимитов больше нет</h3>
+            <p>Хотите работать часами? Экспериментировать? Запускать сложные цепочки задач? Пожалуйста. Никаких счётчиков.</p>
+          </article>
+          <article class="gpu-benefit-card">
+            <span class="icon">◇ Наша философия</span>
+            <h3>Эффективность.</h3>
+            <p>Замкнутая система (модель + контекст + инструменты + вычисления), которую вы полностью контролируете и настраиваете под себя.</p>
+          </article>
+          <article class="gpu-benefit-card">
+            <span class="icon">⚡ Задержка</span>
+            <h3>Забудьте про задержки</h3>
+            <p>Больше никаких путешествий в дата-центр. Ответ приходит за миллисекунды. Мгновенно.</p>
+          </article>
+          <article class="gpu-benefit-card gpu-benefit-card--wide">
+            <span class="icon">⚙ Ваша модель</span>
+            <h3>Модель, которая знает ваши задачи</h3>
+            <p>Вы разворачиваете модель на вашем GPU и обучаете её под конкретно ваши задачи — личный эксперт, не облачный сервис.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gpu-section gpu-section--soft" id="privacy">
+      <div class="container gpu-privacy">
+        <span class="gpu-eyebrow gpu-eyebrow--lime">◉ Приватность</span>
+        <h2>Никто не увидит ваши данные</h2>
+        <p class="lead-block">Ни обезличивания, ни агрегации, ни отправки. Каждое действие, каждый запрос — всё остаётся на вашем устройстве.</p>
+      </div>
+    </section>
+
+    <section class="gpu-section" id="capabilities">
+      <div class="container">
+        <span class="gpu-eyebrow">Возможности</span>
+        <h2 class="wide">Система агентов, обученная<br />под ваши задачи</h2>
+        <div class="gpu-cap-grid">
+          <article class="gpu-cap-card">
+            <span class="num">[01]</span>
+            <h3>Понимает вашу структуру работы.</h3>
+            <p>Rig видит, как всё связано друг с другом. Поэтому он мыслит масштабно, а не только то, что прямо перед ним.</p>
+          </article>
+          <article class="gpu-cap-card">
+            <span class="num">[02]</span>
+            <h3>Чинит без поломок.</h3>
+            <p>Уважает границы и правила. Меньше ошибок и лишней работы.</p>
+          </article>
+          <article class="gpu-cap-card">
+            <span class="num">[03]</span>
+            <h3>Сначала думает, потом делает.</h3>
+            <p>Работает по схеме: Анализ → План → Действие. Не торопится, продумывает сложные изменения на несколько шагов вперёд.</p>
+          </article>
+          <article class="gpu-cap-card">
+            <span class="num">[04]</span>
+            <h3>Готов к сложным задачам.</h3>
+            <p>Реконструкция, создание нового, поиск решений — он сам решит, какие инструменты применить.</p>
+          </article>
+          <article class="gpu-cap-card">
+            <span class="num">[05]</span>
+            <h3>Изолированная среда.</h3>
+            <p>Каждый эксперимент — в своей «песочнице». Можете запустить несколько задач параллельно, не боясь, что они помешают друг другу.</p>
+          </article>
+          <article class="gpu-cap-card">
+            <span class="num">[06]</span>
+            <h3>Летит на полной скорости.</h3>
+            <p>Движок, оптимизированный под современное железо. Молниеносная реакция на обычном потребительском устройстве.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gpu-section gpu-section--soft" id="summary">
+      <div class="container">
+        <span class="gpu-eyebrow">Резюме</span>
+        <h2 class="wide">Для тех, кто любит скорость и безопасность</h2>
+        <div class="gpu-summary-grid">
+          <div class="gpu-summary-card">
+            <strong>0 мс</strong>
+            <span>Задержка</span>
+            <small>нет облака</small>
+          </div>
+          <div class="gpu-summary-card">
+            <strong>100%</strong>
+            <span>Приватность</span>
+            <small>можно работать в бункере</small>
+          </div>
+          <div class="gpu-summary-card">
+            <strong>Полный</strong>
+            <span>Контроль</span>
+            <small>Ваш GPU. Ваша обученная модель.</small>
+          </div>
+          <div class="gpu-summary-card">
+            <strong>Всегда</strong>
+            <span>Доступность</span>
+            <small>даже без интернета</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gpu-section" id="faq">
+      <div class="container">
+        <span class="gpu-eyebrow">FAQ</span>
+        <h2 class="wide">Частые вопросы — коротко и по делу</h2>
+        <div class="gpu-faq">
+          <details class="faq-item">
+            <summary>01 Что такое Rig?</summary>
+            <p>Это ИИ, который вы разворачиваете на вашем устройстве. Не шлёт данные, не требует внешних серверов. И вы можете обучить его под свои задачи.</p>
+          </details>
+          <details class="faq-item">
+            <summary>02 Чем вы отличаетесь от других?</summary>
+            <p>Мы не даём универсального ИИ «для всех». Мы даём инструмент, который вы запускаете на вашем GPU и дообучаете под себя. Это ваш личный ассистент, а не безликий облачный сервис.</p>
+          </details>
+          <details class="faq-item">
+            <summary>03 Нужно ли платить за использование?</summary>
+            <p>Нет. Вы платите за развёртывание и кастомизацию. А дальше модель работает на вашем железе — никакой платы за запросы или действия.</p>
+          </details>
+          <details class="faq-item">
+            <summary>04 Ищет в интернете?</summary>
+            <p>Да. Умеет всё, что ждёте от современного ИИ-агента, включая поиск в сети, чтение документов и режим планирования.</p>
+          </details>
+          <details class="faq-item">
+            <summary>05 Мои данные в безопасности?</summary>
+            <p>Да. Единственное, что уходит от вас — технический «пинг» для проверки лицензии. Ваши данные и настройки модели никогда не покидают ваш компьютер.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="gpu-section gpu-cta-final" id="cta">
+      <div class="container">
+        <h2>Вырвись из матрицы большого ИИ</h2>
+        <p>Заберите контроль. Разверните модель на вашем GPU. Обучите её под ваши задачи.</p>
+        <a href="index.html#contact" class="btn btn-primary">оставить заявку</a>
       </div>
     </section>
   </main>
