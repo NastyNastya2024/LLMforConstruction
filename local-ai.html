@@ -7,7 +7,7 @@
   <title>Локальный AI — Structora AI</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
+<body class="subpage">
   <header class="site-header">
     <div class="nav-inner">
       <a href="index.html" class="logo">Structora <span>AI</span></a>
@@ -29,23 +29,27 @@
   </header>
 
   <main>
-    <section class="page-hero-band">
-      <div class="container">
-        <div class="w-meta">
-          <span class="w-meta__id">n.<span>001</span></span>
-          <span class="w-meta__name">Суть</span>
-        </div>
-        <p class="w-num">N°001</p>
-        <h1>Локальный AI в строительстве — данные остаются у вас</h1>
-        <p class="lead">
-          Искусственный интеллект на вашем сервере или GPU-кластере, а не в облаке.
-        </p>
+    <header class="module-hero">
+      <div class="container module-hero__inner">
+        <a href="index.html" class="back-link">← Главная</a>
+        <h1>Локальный AI в строительстве</h1>
+        <p class="lead">Искусственный интеллект на вашем сервере или GPU-кластере, а не в облаке. Данные остаются у вас.</p>
       </div>
-    </section>
+    </header>
 
-    <section class="w-section w-section--soft">
+    <div class="module-body module-body--stacked">
       <div class="container">
-        <div class="info-card">
+        <div class="mod-content">
+
+    <section class="mod-section">
+      <div class="mod-section__head">
+        <span class="mod-section__num">01</span>
+        <div class="mod-section__titles">
+          <h2>Что это значит</h2>
+        </div>
+      </div>
+      <div class="mod-section__body">
+        <div class="info-card" style="box-shadow:none;border:none;padding:0;">
           <h3>Это значит</h3>
           <ul class="check-list">
             <li>
@@ -65,16 +69,14 @@
       </div>
     </section>
 
-    <section class="w-section">
-      <div class="container">
-        <div class="w-section__head">
-          <div class="w-meta">
-            <span class="w-meta__id">n.<span>002</span></span>
-            <span class="w-meta__name">Сравнение</span>
-          </div>
-          <p class="w-num">N°002</p>
-          <h2 class="w-title">Облако vs локальная система</h2>
+    <section class="mod-section">
+      <div class="mod-section__head">
+        <span class="mod-section__num">02</span>
+        <div class="mod-section__titles">
+          <h2>Облако vs локальная система</h2>
         </div>
+      </div>
+      <div class="mod-section__body">
         <div class="compare-grid">
           <div class="compare-card negative">
             <h3>Облако</h3>
@@ -98,13 +100,16 @@
       </div>
     </section>
 
-    <section class="w-section w-section--soft">
-      <div class="container">
-        <div class="w-section__head">
-          <p class="w-num">N°003</p>
-          <h2 class="w-title">Почему это важно в строительстве</h2>
-          <p class="w-lead">Крупные контракты, тендеры и инженерная документация. Утечка или ошибка стоит миллионы.</p>
+    <section class="mod-section">
+      <div class="mod-section__head">
+        <span class="mod-section__num">03</span>
+        <div class="mod-section__titles">
+          <h2>Почему это важно в строительстве</h2>
+          <span class="mod-section__tag">Риски утечки</span>
         </div>
+      </div>
+      <div class="mod-section__body">
+        <p>Крупные контракты, тендеры и инженерная документация. Утечка или ошибка стоит миллионы.</p>
         <div class="metrics-grid metrics-grid--3">
           <article class="value-card">
             <h3>Крупные контракты</h3>
@@ -122,12 +127,14 @@
       </div>
     </section>
 
-    <section class="w-section">
-      <div class="container">
-        <div class="w-section__head">
-          <p class="w-num">N°004</p>
-          <h2 class="w-title">Как это работает</h2>
+    <section class="mod-section">
+      <div class="mod-section__head">
+        <span class="mod-section__num">04</span>
+        <div class="mod-section__titles">
+          <h2>Как это работает</h2>
         </div>
+      </div>
+      <div class="mod-section__body">
         <div class="steps">
           <div class="step-item">
             <span class="step-num">01</span>
@@ -149,19 +156,46 @@
       </div>
     </section>
 
-    <section class="w-section contact-section">
-      <div class="container contact-grid">
-        <div>
-          <p class="w-num">N°005</p>
-          <h2 class="w-title">Развернуть локальный AI</h2>
-          <p class="w-lead">Консультация по архитектуре и интеграции с 1С / ERP.</p>
+    <section class="mod-section" id="faq">
+      <div class="mod-section__head">
+        <span class="mod-section__num">FAQ</span>
+        <div class="mod-section__titles">
+          <h2>Частые вопросы</h2>
         </div>
-        <div class="contact-actions">
-          <a href="index.html#contact" class="btn btn-primary">Контакты</a>
-          <a href="module-tenders.html" class="btn btn-outline btn-sm">Тендеры</a>
+      </div>
+      <div class="mod-section__body">
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Что такое локальный AI для строительства?</summary>
+            <p>Система на вашем сервере или GPU: чертежи, тендеры и финансы не покидают компанию.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Чем отличается от облачных решений?</summary>
+            <p>Полная изоляция данных, работа без внешних API, быстрая обработка на вашем оборудовании.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Какие модули доступны?</summary>
+            <p>Фильтрация запросов, подготовка КП и управление тендерами — подключаются к одной платформе.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Как начать развёртывание?</summary>
+            <p>Консультация по архитектуре, подбор GPU и интеграция с 1С / ERP / Битрикс24.</p>
+          </details>
         </div>
       </div>
     </section>
+
+    <div class="mod-cta-panel">
+      <p>Разверните локальный AI в вашем контуре</p>
+      <div class="hero-actions">
+        <a href="index.html#contact" class="btn btn-primary">Контакты</a>
+        <a href="local-gpu.html" class="btn btn-outline btn-sm">Локальный GPU</a>
+      </div>
+    </div>
+
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer class="site-footer">

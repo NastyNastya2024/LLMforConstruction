@@ -32,11 +32,6 @@
     <header class="module-hero">
       <div class="container module-hero__inner">
         <a href="index.html#solutions" class="back-link">← Все модули</a>
-        <nav class="module-switcher" aria-label="Модули платформы">
-          <a href="module-filter.html" class="is-active"><span>01</span> Фильтрация</a>
-          <a href="module-kp.html"><span>02</span> КП</a>
-          <a href="module-tenders.html"><span>03</span> Тендеры</a>
-        </nav>
         <h1>Фильтрация запросов</h1>
         <p class="lead">Автоматическая оценка входящих запросов на целесообразность подготовки КП — на локальном GPU, с правилами и интеграцией в Битрикс24.</p>
         <div class="module-hero__stats">
@@ -58,6 +53,7 @@
             <a href="#arch">Архитектура</a>
             <a href="#results">Результат</a>
             <a href="#rollout">Внедрение</a>
+            <a href="#faq">FAQ</a>
           </nav>
         </aside>
 
@@ -179,6 +175,35 @@
                 <li>Пилот на исторических сделках.</li>
                 <li>Запуск в промышленную эксплуатацию.</li>
               </ol>
+            </div>
+          </section>
+
+          <section class="mod-section" id="faq">
+            <div class="mod-section__head">
+              <span class="mod-section__num">FAQ</span>
+              <div class="mod-section__titles">
+                <h2>Частые вопросы</h2>
+              </div>
+            </div>
+            <div class="mod-section__body">
+              <div class="faq-list">
+                <details class="faq-item">
+                  <summary>Нужен ли доступ в интернет для работы модуля?</summary>
+                  <p>Нет. Классификация и правила выполняются на локальном GPU в вашей сети. Интернет нужен только для интеграций, если вы их включите.</p>
+                </details>
+                <details class="faq-item">
+                  <summary>Обязательна ли интеграция с Битрикс24?</summary>
+                  <p>Нет, но она даёт автоматический обмен сделками, статусами и журналом решений без ручного переноса данных.</p>
+                </details>
+                <details class="faq-item">
+                  <summary>Можно ли переопределить решение системы?</summary>
+                  <p>Да. Ответственный сотрудник может вручную изменить статус запроса — действие фиксируется в аудит-логе.</p>
+                </details>
+                <details class="faq-item">
+                  <summary>Сколько длится пилот?</summary>
+                  <p>Обычно 2–4 недели на исторических сделках: настройка правил, интеграция и калибровка метрик.</p>
+                </details>
+              </div>
             </div>
           </section>
 

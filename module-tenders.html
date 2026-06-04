@@ -32,11 +32,6 @@
     <header class="module-hero">
       <div class="container module-hero__inner">
         <a href="index.html#solutions" class="back-link">← Все модули</a>
-        <nav class="module-switcher" aria-label="Модули платформы">
-          <a href="module-filter.html"><span>01</span> Фильтрация</a>
-          <a href="module-kp.html"><span>02</span> КП</a>
-          <a href="module-tenders.html" class="is-active"><span>03</span> Тендеры</a>
-        </nav>
         <h1>Фильтрация тендеров и тендерная документация</h1>
         <p class="lead">Локальный AI на GPU: отбор перспективных закупок, подготовка заявки и оценка вероятности победы — без передачи данных во внешние облака.</p>
         <div class="module-hero__stats">
@@ -61,6 +56,7 @@
             <a href="#effect">Эффект</a>
             <a href="#rollout">Внедрение</a>
             <a href="#arch">Архитектура</a>
+            <a href="#faq">FAQ</a>
           </nav>
         </aside>
 
@@ -314,6 +310,35 @@
                 <li>GPU-инференс</li>
               </ul>
               <p class="arch-note">Все данные, документация, расчёты и модели — внутри контура предприятия.</p>
+            </div>
+          </section>
+
+          <section class="mod-section" id="faq">
+            <div class="mod-section__head">
+              <span class="mod-section__num">FAQ</span>
+              <div class="mod-section__titles">
+                <h2>Частые вопросы</h2>
+              </div>
+            </div>
+            <div class="mod-section__body">
+              <div class="faq-list">
+                <details class="faq-item">
+                  <summary>Чем модуль отличается от фильтрации запросов?</summary>
+                  <p>Фильтрация запросов — входящий поток до КП. Тендерный модуль охватывает полный цикл: отбор закупок, документацию заявки и оценку вероятности победы.</p>
+                </details>
+                <details class="faq-item">
+                  <summary>Работает ли система с ЕИС и площадками?</summary>
+                  <p>Да. Поддерживаются ЕИС, коммерческие площадки, почта и корпоративные хранилища — в зависимости от вашей интеграции.</p>
+                </details>
+                <details class="faq-item">
+                  <summary>Как рассчитывается вероятность победы?</summary>
+                  <p>На основе исторических данных компании: допуск, победа, прибыль и рентабельность — в виде интегрального балла.</p>
+                </details>
+                <details class="faq-item">
+                  <summary>Сколько занимает первичный анализ тендера?</summary>
+                  <p>После внедрения — 5–15 минут вместо 2–8 часов при ручной обработке.</p>
+                </details>
+              </div>
             </div>
           </section>
 

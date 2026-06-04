@@ -7,7 +7,7 @@
   <title>Локальный GPU — Structora AI</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body class="gpu-landing">
+<body class="module-page module-page--gpu">
   <header class="site-header">
     <div class="nav-inner">
       <a href="index.html" class="logo">Structora <span>AI</span></a>
@@ -29,22 +29,17 @@
   </header>
 
   <main>
-    <section class="gpu-hero" id="top">
-      <div class="container">
-        <nav class="gpu-subnav" aria-label="Разделы страницы">
-          <a href="#faq">FAQ</a>
-          <a href="#product">Наш продукт</a>
-          <a href="#benefits">Философия</a>
-          <a href="#capabilities">Возможности</a>
-        </nav>
+    <header class="module-hero" id="top">
+      <div class="container module-hero__inner">
+        <a href="index.html" class="back-link">← Главная</a>
         <h1>Локальный ИИ-агент <span>Без облаков. Без лимитов.</span></h1>
         <p class="lead">Это полностью автономный ИИ-агент, работающий на вашем устройстве. Ему не нужно подключаться к облаку. А вам — беспокоиться об ограничениях.</p>
         <div class="gpu-hero-actions">
-          <a href="index.html#contact" class="btn btn-primary">подать заявку</a>
-          <a href="#product" class="btn btn-outline">наши подходы</a>
+          <a href="index.html#contact" class="btn btn-primary">Контакты</a>
+          <a href="#product" class="btn btn-outline">Наш продукт</a>
         </div>
       </div>
-    </section>
+    </header>
 
     <div class="gpu-marquee" aria-hidden="true">
       <div class="gpu-marquee__track">
@@ -53,10 +48,20 @@
       </div>
     </div>
 
-    <section class="gpu-section" id="problem">
+    <div class="module-body">
       <div class="container">
-        <span class="gpu-eyebrow">Проблема</span>
-        <h2 class="wide">Сейчас вы не владеете LLM. Claude, ChatGPT и Perplexity могут использовать ваши данные.</h2>
+        <div class="mod-content">
+
+    <section class="mod-section gpu-section" id="problem">
+      <div class="mod-section__head">
+        <span class="mod-section__num">01</span>
+        <div class="mod-section__titles">
+          <h2>Проблема облачных LLM</h2>
+          <span class="mod-section__tag">Почему не облако</span>
+        </div>
+      </div>
+      <div class="mod-section__body">
+        <p>Сейчас вы не владеете LLM. Claude, ChatGPT и Perplexity могут использовать ваши данные.</p>
         <div class="gpu-problem-grid">
           <article class="gpu-problem-card">
             <span class="num">Извлечение данных 001</span>
@@ -82,19 +87,26 @@
       </div>
     </section>
 
-    <section class="gpu-section gpu-section--soft" id="product">
-      <div class="container">
-        <div class="gpu-product-copy">
-          <span class="badge">✓ Наш продукт</span>
-          <h2 class="wide">Мы создаём локальную LLM, которой владеете только вы</h2>
-          <p class="lead-block">Полноценный ИИ-агент, который вы разворачиваете на собственном GPU и обучаете под свои задачи. Никаких лимитов. Никакой облачной зависимости.</p>
+    <section class="mod-section mod-section--spotlight gpu-section" id="product">
+      <div class="mod-section__head">
+        <div class="mod-section__titles">
+          <span class="mod-section__tag mod-section__tag--lime">Наш продукт</span>
+          <h2>Локальная LLM</h2>
         </div>
+      </div>
+      <div class="mod-section__body">
+        <p>Полноценный ИИ-агент, который вы разворачиваете на собственном GPU и обучаете под свои задачи. Никаких лимитов. Никакой облачной зависимости.</p>
       </div>
     </section>
 
-    <section class="gpu-section" id="benefits">
-      <div class="container">
-        <span class="gpu-eyebrow">Ключевые преимущества</span>
+    <section class="mod-section gpu-section" id="benefits">
+      <div class="mod-section__head">
+        <span class="mod-section__num">03</span>
+        <div class="mod-section__titles">
+          <h2>Ключевые преимущества</h2>
+        </div>
+      </div>
+      <div class="mod-section__body">
         <div class="gpu-benefits-grid">
           <article class="gpu-benefit-card">
             <span class="icon">◎ Офлайн</span>
@@ -125,18 +137,27 @@
       </div>
     </section>
 
-    <section class="gpu-section gpu-section--soft" id="privacy">
-      <div class="container gpu-privacy">
-        <span class="gpu-eyebrow gpu-eyebrow--lime">◉ Приватность</span>
-        <h2>Никто не увидит ваши данные</h2>
-        <p class="lead-block">Ни обезличивания, ни агрегации, ни отправки. Каждое действие, каждый запрос — всё остаётся на вашем устройстве.</p>
+    <section class="mod-section mod-section--spotlight gpu-section" id="privacy">
+      <div class="mod-section__head">
+        <div class="mod-section__titles">
+          <span class="mod-section__tag mod-section__tag--lime">◉ Приватность</span>
+          <h2>Никто не увидит ваши данные</h2>
+        </div>
+      </div>
+      <div class="mod-section__body">
+        <p>Ни обезличивания, ни агрегации, ни отправки. Каждое действие, каждый запрос — всё остаётся на вашем устройстве.</p>
       </div>
     </section>
 
-    <section class="gpu-section" id="capabilities">
-      <div class="container">
-        <span class="gpu-eyebrow">Возможности</span>
-        <h2 class="wide">Система агентов, обученная<br />под ваши задачи</h2>
+    <section class="mod-section gpu-section" id="capabilities">
+      <div class="mod-section__head">
+        <span class="mod-section__num">05</span>
+        <div class="mod-section__titles">
+          <h2>Система агентов под ваши задачи</h2>
+          <span class="mod-section__tag">Возможности</span>
+        </div>
+      </div>
+      <div class="mod-section__body">
         <div class="gpu-cap-grid">
           <article class="gpu-cap-card">
             <span class="num">[01]</span>
@@ -172,10 +193,15 @@
       </div>
     </section>
 
-    <section class="gpu-section gpu-section--soft" id="summary">
-      <div class="container">
-        <span class="gpu-eyebrow">Резюме</span>
-        <h2 class="wide">Для тех, кто любит скорость и безопасность</h2>
+    <section class="mod-section gpu-section" id="summary">
+      <div class="mod-section__head">
+        <span class="mod-section__num">06</span>
+        <div class="mod-section__titles">
+          <h2>Скорость и безопасность</h2>
+          <span class="mod-section__tag">Резюме</span>
+        </div>
+      </div>
+      <div class="mod-section__body">
         <div class="gpu-summary-grid">
           <div class="gpu-summary-card">
             <strong>0 мс</strong>
@@ -201,42 +227,50 @@
       </div>
     </section>
 
-    <section class="gpu-section" id="faq">
-      <div class="container">
-        <span class="gpu-eyebrow">FAQ</span>
-        <h2 class="wide">Частые вопросы — коротко и по делу</h2>
-        <div class="gpu-faq">
+    <section class="mod-section" id="faq">
+      <div class="mod-section__head">
+        <span class="mod-section__num">FAQ</span>
+        <div class="mod-section__titles">
+          <h2>Частые вопросы</h2>
+        </div>
+      </div>
+      <div class="mod-section__body">
+        <div class="faq-list">
           <details class="faq-item">
-            <summary>01 Что такое Rig?</summary>
-            <p>Это ИИ, который вы разворачиваете на вашем устройстве. Не шлёт данные, не требует внешних серверов. И вы можете обучить его под свои задачи.</p>
+            <summary>Что такое локальный ИИ на GPU?</summary>
+            <p>Это ИИ, который вы разворачиваете на вашем устройстве. Не шлёт данные во внешние облака и может быть обучен под ваши задачи.</p>
           </details>
           <details class="faq-item">
-            <summary>02 Чем вы отличаетесь от других?</summary>
-            <p>Мы не даём универсального ИИ «для всех». Мы даём инструмент, который вы запускаете на вашем GPU и дообучаете под себя. Это ваш личный ассистент, а не безликий облачный сервис.</p>
+            <summary>Чем отличается от ChatGPT и облачных сервисов?</summary>
+            <p>Вы запускаете модель на своём GPU и дообучаете под себя. Это ваш инструмент в периметре компании, а не безликий облачный сервис с лимитами.</p>
           </details>
           <details class="faq-item">
-            <summary>03 Нужно ли платить за использование?</summary>
-            <p>Нет. Вы платите за развёртывание и кастомизацию. А дальше модель работает на вашем железе — никакой платы за запросы или действия.</p>
+            <summary>Нужно ли платить за каждый запрос?</summary>
+            <p>Нет. Вы платите за развёртывание и кастомизацию. Дальше модель работает на вашем железе без платы за токены.</p>
           </details>
           <details class="faq-item">
-            <summary>04 Ищет в интернете?</summary>
-            <p>Да. Умеет всё, что ждёте от современного ИИ-агента, включая поиск в сети, чтение документов и режим планирования.</p>
+            <summary>Работает ли без интернета?</summary>
+            <p>Да. Основные сценарии выполняются локально. Интернет нужен только для опциональных интеграций.</p>
           </details>
           <details class="faq-item">
-            <summary>05 Мои данные в безопасности?</summary>
-            <p>Да. Единственное, что уходит от вас — технический «пинг» для проверки лицензии. Ваши данные и настройки модели никогда не покидают ваш компьютер.</p>
+            <summary>Мои данные в безопасности?</summary>
+            <p>Да. Документация, расчёты и настройки модели остаются в контуре предприятия и не передаются в публичные API.</p>
           </details>
         </div>
       </div>
     </section>
 
-    <section class="gpu-section gpu-cta-final" id="cta">
-      <div class="container">
-        <h2>Вырвись из матрицы большого ИИ</h2>
-        <p>Заберите контроль. Разверните модель на вашем GPU. Обучите её под ваши задачи.</p>
-        <a href="index.html#contact" class="btn btn-primary">оставить заявку</a>
+    <div class="mod-cta-panel">
+      <p>Разверните модель на вашем GPU. Обучите её под ваши задачи.</p>
+      <div class="hero-actions">
+        <a href="index.html#contact" class="btn btn-primary">Контакты</a>
+        <a href="module-filter.html" class="btn btn-outline btn-sm">Модули платформы</a>
       </div>
-    </section>
+    </div>
+
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer class="site-footer">

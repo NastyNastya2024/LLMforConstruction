@@ -750,6 +750,10 @@ a {
   border-bottom: 1px solid var(--border);
 }
 
+.faq-item:last-child {
+  border-bottom: none;
+}
+
 .faq-item summary {
   padding: 24px 0;
   font-size: 1rem;
@@ -818,19 +822,135 @@ a {
   --mod-accent-soft: rgba(191, 255, 0, 0.25);
 }
 
-.module-page--filter {
+/* Акценты модульных страниц: зелёный (лайм) + чёрный для номеров секций */
+.module-page .mod-section__num {
+  background: var(--text);
+  color: #fff;
+}
+
+.module-page--gpu .module-hero h1 span {
+  display: block;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+/* Subpages: same shell as module pages (index unchanged) */
+body.subpage {
   --mod-accent: var(--lime);
   --mod-accent-soft: rgba(191, 255, 0, 0.28);
 }
 
-.module-page--kp {
-  --mod-accent: #93c5fd;
-  --mod-accent-soft: rgba(147, 197, 253, 0.35);
+body.subpage,
+body.gpu-landing {
+  background: var(--bg);
 }
 
-.module-page--tenders {
-  --mod-accent: #111827;
-  --mod-accent-soft: rgba(17, 24, 39, 0.08);
+body.subpage main,
+body.gpu-landing main {
+  padding-top: var(--nav-h);
+}
+
+body.subpage .page-hero-band {
+  padding: 56px 0 48px;
+  background: var(--bg-card);
+  border-bottom: none;
+}
+
+body.subpage .page-hero-band h1 {
+  margin: 0 0 16px;
+  max-width: none;
+  font-size: clamp(1.75rem, 4.5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+body.subpage .page-hero-band .lead {
+  margin: 0;
+  max-width: 58ch;
+  font-size: 1.0625rem;
+  color: var(--text-muted);
+}
+
+body.subpage .w-section {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+body.subpage .module-body--stacked {
+  padding: 40px 0 80px;
+}
+
+body.subpage .module-body--stacked .mod-content {
+  gap: 20px;
+}
+
+.mod-section .faq-list {
+  max-width: none;
+}
+
+.mod-section .faq-list .faq-item {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 8px;
+  padding: 0 20px;
+}
+
+.mod-section .faq-list .faq-item summary {
+  border-bottom: none;
+}
+
+.mod-section .faq-list .faq-item p {
+  margin: 0 0 20px;
+  padding: 0 0 4px;
+  max-width: none;
+}
+
+/* GPU page sections inside unified module layout */
+.module-page--gpu .gpu-marquee {
+  margin: 0 0 40px;
+}
+
+.module-page--gpu .gpu-section {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.module-page--gpu .gpu-section > .container {
+  padding: 0;
+}
+
+.module-page--gpu .gpu-section .wide,
+.module-page--gpu .gpu-section h2 {
+  margin: 0 0 20px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  max-width: none;
+}
+
+.module-page--gpu .gpu-eyebrow {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.module-page--gpu .gpu-problem-card,
+.module-page--gpu .gpu-benefit-card,
+.module-page--gpu .gpu-cap-card,
+.module-page--gpu .gpu-summary-card {
+  box-shadow: var(--shadow);
+}
+
+.module-page--gpu .gpu-cta-final {
+  display: none;
 }
 
 .back-link {
@@ -925,10 +1045,6 @@ a {
 .module-switcher a.is-active span {
   background: var(--mod-accent);
   color: #fff;
-}
-
-.module-page--filter .module-switcher a.is-active span {
-  color: var(--lime-text);
 }
 
 .module-hero__stats {
@@ -1052,10 +1168,6 @@ a {
   background: var(--mod-accent);
   color: #fff;
   border-radius: 10px;
-}
-
-.module-page--filter .mod-section__num {
-  color: var(--lime-text);
 }
 
 .mod-section__titles h2 {
@@ -2344,12 +2456,56 @@ a {
   grid-column: span 2;
 }
 
-.gpu-privacy {
-  max-width: 52ch;
+/* Spotlight-блоки: по центру, лайм + чёрный акцент */
+.mod-section--spotlight {
+  background: linear-gradient(180deg, rgba(191, 255, 0, 0.14) 0%, var(--bg-card) 42%);
+  border-color: rgba(17, 24, 39, 0.12);
+  box-shadow: var(--shadow), inset 0 1px 0 rgba(191, 255, 0, 35);
 }
 
-.gpu-privacy h2 {
-  max-width: none;
+.mod-section--spotlight .mod-section__head {
+  justify-content: center;
+  padding: 44px 32px 0;
+}
+
+.mod-section--spotlight .mod-section__titles {
+  text-align: center;
+  max-width: 640px;
+}
+
+.mod-section--spotlight .mod-section__titles h2 {
+  margin: 0 0 16px;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+.mod-section--spotlight .mod-section__tag--lime {
+  display: inline-block;
+  margin: 0;
+  padding: 6px 14px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--lime-text);
+  background: var(--lime);
+  border-radius: var(--radius-pill);
+}
+
+.mod-section--spotlight .mod-section__body {
+  text-align: center;
+  padding-bottom: 44px;
+}
+
+.mod-section--spotlight .mod-section__body > p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 52ch;
+  color: var(--text-muted);
+  font-size: 1.0625rem;
+  line-height: 1.65;
 }
 
 .gpu-cap-grid {

@@ -7,7 +7,7 @@
   <title>Продукт — Structora AI</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
+<body class="subpage">
   <header class="site-header">
     <div class="nav-inner">
       <a href="index.html" class="logo">Structora <span>AI</span></a>
@@ -29,26 +29,26 @@
   </header>
 
   <main>
-    <section class="page-hero-band">
-      <div class="container">
-        <div class="w-meta">
-          <span class="w-meta__id">n.<span>001</span></span>
-          <span class="w-meta__name">Продукт</span>
-        </div>
-        <p class="w-num">N°001</p>
+    <header class="module-hero">
+      <div class="container module-hero__inner">
+        <a href="index.html" class="back-link">← Главная</a>
         <h1>AI-платформа для тендеров и проектов</h1>
-        <p class="lead">
-          Одна система вместо тендерного менеджера, аналитика и координатора проекта.
-        </p>
+        <p class="lead">Одна система вместо тендерного менеджера, аналитика и координатора проекта — на вашем GPU.</p>
       </div>
-    </section>
+    </header>
 
-    <section class="w-section w-section--soft">
+    <div class="module-body module-body--stacked">
       <div class="container">
-        <div class="w-section__head">
-          <p class="w-num">N°002</p>
-          <h2 class="w-title">Возможности</h2>
+        <div class="mod-content">
+
+    <section class="mod-section">
+      <div class="mod-section__head">
+        <span class="mod-section__num">01</span>
+        <div class="mod-section__titles">
+          <h2>Возможности</h2>
         </div>
+      </div>
+      <div class="mod-section__body">
         <div class="features-table">
           <div class="feature-row">
             <div>
@@ -74,12 +74,14 @@
       </div>
     </section>
 
-    <section class="w-section">
-      <div class="container">
-        <div class="w-section__head">
-          <p class="w-num">N°003</p>
-          <h2 class="w-title">Эффект для бизнеса</h2>
+    <section class="mod-section">
+      <div class="mod-section__head">
+        <span class="mod-section__num">02</span>
+        <div class="mod-section__titles">
+          <h2>Эффект для бизнеса</h2>
         </div>
+      </div>
+      <div class="mod-section__body">
         <div class="effects-grid">
           <div class="effect-card">
             <div class="value">3–5×</div>
@@ -101,12 +103,14 @@
       </div>
     </section>
 
-    <section class="w-section w-section--soft">
-      <div class="container">
-        <div class="w-section__head">
-          <p class="w-num">N°004</p>
-          <h2 class="w-title">Развертывание</h2>
+    <section class="mod-section">
+      <div class="mod-section__head">
+        <span class="mod-section__num">03</span>
+        <div class="mod-section__titles">
+          <h2>Развертывание</h2>
         </div>
+      </div>
+      <div class="mod-section__body">
         <div class="metrics-grid metrics-grid--3">
           <article class="value-card">
             <h3>On-premise</h3>
@@ -124,19 +128,46 @@
       </div>
     </section>
 
-    <section class="w-section contact-section">
-      <div class="container contact-grid">
-        <div>
-          <p class="w-num">N°005</p>
-          <h2 class="w-title">Демо через 2 недели</h2>
-          <p class="w-lead">Посмотрите, как AI меняет вашу стройку на ваших данных.</p>
+    <section class="mod-section" id="faq">
+      <div class="mod-section__head">
+        <span class="mod-section__num">FAQ</span>
+        <div class="mod-section__titles">
+          <h2>Частые вопросы</h2>
         </div>
-        <div class="contact-actions">
-          <a href="index.html#contact" class="btn btn-primary">Контакты</a>
-          <a href="local-gpu.html" class="btn btn-outline btn-sm">Локальный GPU</a>
+      </div>
+      <div class="mod-section__body">
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Что входит в платформу Structora AI?</summary>
+            <p>Модули фильтрации запросов, подготовки КП и сквозного управления тендерами на единой on-premise платформе.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Где хранятся данные?</summary>
+            <p>На серверах или GPU-инфраструктуре заказчика. Облачные API не обязательны.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Как быстро можно увидеть демо?</summary>
+            <p>Обычно в течение 2 недель — на ваших данных в изолированной среде.</p>
+          </details>
+          <details class="faq-item">
+            <summary>С чего начать внедрение?</summary>
+            <p>С обследования процесса и пилота одного модуля — фильтрации, КП или тендеров.</p>
+          </details>
         </div>
       </div>
     </section>
+
+    <div class="mod-cta-panel">
+      <p>Посмотрите платформу на ваших данных</p>
+      <div class="hero-actions">
+        <a href="index.html#contact" class="btn btn-primary">Контакты</a>
+        <a href="local-gpu.html" class="btn btn-outline btn-sm">Локальный GPU</a>
+      </div>
+    </div>
+
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer class="site-footer">
