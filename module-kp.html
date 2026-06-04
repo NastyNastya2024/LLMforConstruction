@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Генерация коммерческих предложений — Structora AI." />
-  <title>Генерация КП — Structora AI</title>
+  <meta name="description" content="Модуль подготовки коммерческих предложений — локальный GPU, OCR, расчёт сметы, Structora AI." />
+  <title>Модуль подготовки КП — Structora AI</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -25,7 +25,7 @@
         <li><a href="local-gpu.html">Локальный GPU</a></li>
         <li><a href="index.html#contact">Контакты</a></li>
       </ul>
-      <a href="index.html#contact" class="btn btn-primary btn-sm">Демо</a>
+      <a href="index.html#contact" class="btn btn-primary btn-sm">Контакты</a>
     </div>
   </header>
 
@@ -34,23 +34,190 @@
       <div class="container">
         <a href="index.html#solutions" class="back-link">← Все модули</a>
         <span class="module-hero-num">02</span>
-        <h1>Генерация коммерческих предложений (КП)</h1>
-        <p class="lead">Система формирует КП на основе ваших расценок, загрузки и стратегии маржинальности.</p>
+        <h1>Модуль подготовки коммерческих предложений (КП)</h1>
+        <p class="lead">Извлечение спецификаций, сопоставление с расценками и черновик КП на локальном GPU — с детерминированным расчётом и контролем инженера.</p>
+      </div>
+    </section>
+
+    <section class="w-section">
+      <div class="container module-doc">
+        <h2>1. Локальное исполнение на GPU (ключевой принцип)</h2>
+        <p>Система разворачивается в инфраструктуре заказчика и выполняет обработку документов, сопоставление спецификаций и генерацию черновиков КП на локальном GPU.</p>
+        <div class="principle-panel">
+          <p>Подход:</p>
+          <ul>
+            <li>Языковая модель используется для понимания документов и классификации.</li>
+            <li>Все числовые расчёты выполняются детерминированно.</li>
+            <li>Цены берутся только из справочников, прайсов и проверенных источников.</li>
+            <li>Никакие данные не отправляются во внешние публичные модели без явного разрешения заказчика.</li>
+          </ul>
+        </div>
+        <h3>Почему это важно</h3>
+        <p class="module-lead">Преимущества для заказчика</p>
+        <ul class="content-list">
+          <li>Защита коммерчески чувствительной информации.</li>
+          <li>Соответствие требованиям 152-ФЗ.</li>
+          <li>Возможность работы даже при недоступности внешних сервисов.</li>
+          <li>Предсказуемая производительность и стоимость.</li>
+        </ul>
       </div>
     </section>
 
     <section class="w-section w-section--soft">
-      <div class="container content-block">
-        <h2>Как это работает</h2>
-        <p>Скорость реакции на тендер — ключ к победе. КП собирается за минуты, а не за дни.</p>
+      <div class="container module-doc">
+        <h2>2. Назначение модуля</h2>
+        <p>Автоматизация механической части подготовки КП:</p>
         <ul class="content-list">
-          <li>Подтягивание актуальных расценок и нормативов из ваших баз</li>
-          <li>Учёт текущей загрузки бригад и субподрядчиков</li>
-          <li>Автоматический расчёт маржи по заданной стратегии</li>
-          <li>Единый шаблон КП под ваш бренд и требования заказчика</li>
+          <li>Извлечение спецификаций из PDF/DOCX/XLSX.</li>
+          <li>Сопоставление с базой расценок.</li>
+          <li>Получение цен поставщиков.</li>
+          <li>Расчёт сметы.</li>
+          <li>Формирование черновика КП и сопроводительных документов.</li>
         </ul>
+        <p>Финальная ответственность за КП остаётся за инженером.</p>
+      </div>
+    </section>
+
+    <section class="w-section">
+      <div class="container module-doc">
+        <h2>3. Что входит в поставку</h2>
+        <ul class="content-list">
+          <li>Импорт и распознавание PDF, DOCX, XLSX, JPG, PNG.</li>
+          <li>OCR для сканированных документов на русском языке.</li>
+          <li>Извлечение спецификаций из таблиц.</li>
+          <li>Сопоставление позиций с базой расценок.</li>
+          <li>Работа с прайс-листами поставщиков.</li>
+          <li>Детерминированный расчёт сметы.</li>
+          <li>Генерация DOCX и PDF по шаблонам заказчика.</li>
+          <li>Контрольный список готовности КП.</li>
+          <li>Версионирование документов и аудит изменений.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="w-section w-section--soft">
+      <div class="container module-doc">
+        <h2>4. Архитектура решения</h2>
+        <div class="compare-table-wrap">
+          <table class="compare-table arch-table">
+            <thead>
+              <tr>
+                <th scope="col">Компонент</th>
+                <th scope="col">Назначение</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="col-role">Document Ingestion</th>
+                <td>Загрузка и классификация документов</td>
+              </tr>
+              <tr>
+                <th scope="row" class="col-role">OCR Engine</th>
+                <td>Распознавание сканов</td>
+              </tr>
+              <tr>
+                <th scope="row" class="col-role">Local LLM Extractor</th>
+                <td>Извлечение структурированных данных</td>
+              </tr>
+              <tr>
+                <th scope="row" class="col-role">Matching Engine</th>
+                <td>Сопоставление с базой расценок</td>
+              </tr>
+              <tr>
+                <th scope="row" class="col-role">Pricing Service</th>
+                <td>Работа с прайсами поставщиков</td>
+              </tr>
+              <tr>
+                <th scope="row" class="col-role">Calculation Engine</th>
+                <td>Детерминированный расчёт сметы</td>
+              </tr>
+              <tr>
+                <th scope="row" class="col-role">Document Generator</th>
+                <td>Формирование КП и PDF</td>
+              </tr>
+              <tr>
+                <th scope="row" class="col-role">Bitrix24 Integration</th>
+                <td>Связь со сделкой и хранение артефактов</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="arch-note">Рекомендуемый стек: Python + LangGraph + PostgreSQL + локальная LLM + OCR.</p>
+      </div>
+    </section>
+
+    <section class="w-section">
+      <div class="container module-doc">
+        <h2>5. Ключевые ограничения и гарантии качества</h2>
+        <h3>Система не имеет права:</h3>
+        <ul class="content-list">
+          <li>Генерировать цены, объёмы или коэффициенты.</li>
+          <li>Использовать цену без указания источника.</li>
+          <li>Финализировать КП без проверки инженером.</li>
+          <li>Отправлять КП клиенту автоматически.</li>
+        </ul>
+        <h3>Система обязана:</h3>
+        <ul class="content-list">
+          <li>Хранить источник каждой цены.</li>
+          <li>Показывать трассировку расчётов.</li>
+          <li>Подсвечивать аномальные позиции.</li>
+          <li>Вести полный журнал изменений.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="w-section w-section--soft">
+      <div class="container module-doc">
+        <h2>6. Целевые показатели</h2>
+        <div class="compare-table-wrap">
+          <table class="compare-table arch-table">
+            <thead>
+              <tr>
+                <th scope="col">Показатель</th>
+                <th scope="col">Цель</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="col-role">Подготовка черновика КП</th>
+                <td>до 5 минут</td>
+              </tr>
+              <tr>
+                <th scope="row" class="col-role">Точность извлечения спецификаций</th>
+                <td>≥90%</td>
+              </tr>
+              <tr>
+                <th scope="row" class="col-role">Полнота извлечения строк</th>
+                <td>≥95%</td>
+              </tr>
+              <tr>
+                <th scope="row" class="col-role">Снижение чел-часов инженера</th>
+                <td>на 50% и более</td>
+              </tr>
+              <tr>
+                <th scope="row" class="col-role">Календарный срок подготовки КП</th>
+                <td>1–2 рабочих дня</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-section">
+      <div class="container module-doc">
+        <h2>7. Этапы внедрения</h2>
+        <ol class="steps-list">
+          <li>Обследование и нормализация базы расценок.</li>
+          <li>Пилот на 10–15 сделках.</li>
+          <li>Подключение поставщиков и автоматизации запросов цен.</li>
+          <li>Масштабирование на все типы КП.</li>
+          <li>Калибровка качества и аналитика.</li>
+        </ol>
         <div class="module-cta">
-          <a href="index.html#contact" class="btn btn-primary">Запросить демо</a>
+          <a href="index.html#contact" class="btn btn-primary">Контакты</a>
+          <a href="module-filter.html" class="btn btn-outline btn-sm">Модуль фильтрации</a>
+          <a href="local-gpu.html" class="btn btn-outline btn-sm">Локальный GPU</a>
         </div>
       </div>
     </section>

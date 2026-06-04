@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Фильтрация запросов и тендеров — Structora AI." />
-  <title>Фильтрация запросов — Structora AI</title>
+  <meta name="description" content="Модуль фильтрации запросов — локальный AI на GPU, правила, Битрикс24, Structora AI." />
+  <title>Модуль фильтрации запросов — Structora AI</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -25,7 +25,7 @@
         <li><a href="local-gpu.html">Локальный GPU</a></li>
         <li><a href="index.html#contact">Контакты</a></li>
       </ul>
-      <a href="index.html#contact" class="btn btn-primary btn-sm">Демо</a>
+      <a href="index.html#contact" class="btn btn-primary btn-sm">Контакты</a>
     </div>
   </header>
 
@@ -34,23 +34,125 @@
       <div class="container">
         <a href="index.html#solutions" class="back-link">← Все модули</a>
         <span class="module-hero-num">01</span>
-        <h1>Фильтрация запросов</h1>
-        <p class="lead">AI автоматически анализирует входящие тендеры и отсекает нерентабельные и рискованные проекты.</p>
+        <h1>Модуль фильтрации запросов</h1>
+        <p class="lead">Автоматическая оценка входящих запросов на целесообразность подготовки КП — на локальном GPU, с правилами и интеграцией в Битрикс24.</p>
+      </div>
+    </section>
+
+    <section class="w-section">
+      <div class="container module-doc">
+        <h2>1. Локальное исполнение на GPU (ключевой принцип)</h2>
+        <p>Система разворачивается в инфраструктуре заказчика и выполняет все AI-операции на локальном GPU без передачи данных во внешние облачные сервисы.</p>
+        <div class="principle-panel">
+          <p>Подход основан на принципе:</p>
+          <ul>
+            <li>Детерминированная логика (FSM + правила) принимает решения.</li>
+            <li>Языковая модель используется только для классификации и понимания текста.</li>
+            <li>Результаты проходят проверку через verify/fix-контур.</li>
+            <li>При недоступности модели система продолжает работать по правилам.</li>
+          </ul>
+        </div>
+        <h3>Почему это важно</h3>
+        <p class="module-lead">Преимущества для заказчика</p>
+        <ul class="content-list">
+          <li>Соответствие требованиям 152-ФЗ и внутренней безопасности.</li>
+          <li>Отсутствие зависимости от зарубежных API.</li>
+          <li>Предсказуемая стоимость эксплуатации.</li>
+          <li>Контроль над исходящими данными.</li>
+        </ul>
       </div>
     </section>
 
     <section class="w-section w-section--soft">
-      <div class="container content-block">
-        <h2>Зачем нужен модуль</h2>
-        <p>Вы работаете только с теми контрактами, которые действительно выгодны — без ручного разбора сотен входящих запросов.</p>
+      <div class="container module-doc">
+        <h2>2. Назначение модуля</h2>
+        <p>Автоматическая оценка входящих запросов на предмет целесообразности подготовки КП.</p>
+        <p>Модуль решает три задачи:</p>
         <ul class="content-list">
-          <li>Оценка маржинальности и загрузки ресурсов до старта работы</li>
-          <li>Выявление скрытых рисков в условиях тендера</li>
-          <li>Отсев проектов с низкой вероятностью выигрыша</li>
-          <li>Данные остаются внутри вашей инфраструктуры — на локальном GPU</li>
+          <li>Отсекает заведомо нецелевые запросы.</li>
+          <li>Возвращает запросы в отдел продаж с конкретным перечнем недостающей информации.</li>
+          <li>Передаёт качественные запросы в модуль подготовки КП.</li>
         </ul>
+      </div>
+    </section>
+
+    <section class="w-section">
+      <div class="container module-doc">
+        <h2>3. Что входит в поставку</h2>
+        <ul class="content-list">
+          <li>Редактируемый набор правил фильтрации (без программирования).</li>
+          <li>Классификация неструктурированных запросов с помощью локальной языковой модели.</li>
+          <li>Интеграция с Битрикс24.</li>
+          <li>Журнал решений и причин отказа.</li>
+          <li>Ручное переопределение решения ответственным сотрудником.</li>
+          <li>Метрики работы фильтра.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="w-section w-section--soft">
+      <div class="container module-doc">
+        <h2>4. Архитектура решения</h2>
+        <div class="compare-table-wrap">
+          <table class="compare-table arch-table">
+            <thead>
+              <tr>
+                <th scope="col">Компонент</th>
+                <th scope="col">Назначение</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="col-role">Rule Engine</th>
+                <td>Основная логика принятия решений</td>
+              </tr>
+              <tr>
+                <th scope="row" class="col-role">Local LLM Classifier</th>
+                <td>Извлечение признаков из текста</td>
+              </tr>
+              <tr>
+                <th scope="row" class="col-role">Verification Layer</th>
+                <td>Проверка корректности классификации</td>
+              </tr>
+              <tr>
+                <th scope="row" class="col-role">Bitrix24 Integration</th>
+                <td>Получение и обновление данных сделок</td>
+              </tr>
+              <tr>
+                <th scope="row" class="col-role">Audit Log</th>
+                <td>Полная трассировка решений</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="arch-note">Рекомендуемый стек: Python + LangGraph + Prefect/Temporal + PostgreSQL. Используется паттерн harness engineering, а не конкретный фреймворк reharness.</p>
+      </div>
+    </section>
+
+    <section class="w-section">
+      <div class="container module-doc">
+        <h2>5. Ожидаемый результат</h2>
+        <ul class="content-list">
+          <li>Снижение доли запросов, уходящих в подготовку КП, до 60–70%.</li>
+          <li>Сокращение потерь инженерного времени на заведомо слабые сделки.</li>
+          <li>Прозрачность причин отказов и возвратов.</li>
+          <li>Время обработки одного запроса — до 30 секунд.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="w-section w-section--soft">
+      <div class="container module-doc">
+        <h2>6. Этапы внедрения</h2>
+        <ol class="steps-list">
+          <li>Обследование и настройка правил.</li>
+          <li>Интеграция с Битрикс24.</li>
+          <li>Пилот на исторических сделках.</li>
+          <li>Запуск в промышленную эксплуатацию.</li>
+        </ol>
         <div class="module-cta">
-          <a href="index.html#contact" class="btn btn-primary">Запросить демо</a>
+          <a href="index.html#contact" class="btn btn-primary">Контакты</a>
+          <a href="local-gpu.html" class="btn btn-outline btn-sm">Локальный GPU</a>
         </div>
       </div>
     </section>
